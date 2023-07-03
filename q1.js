@@ -1,5 +1,9 @@
 function buyItem(hero, shop) {
-  /* Your code here */
+  if(hero.gold >= shop.price){
+    hero.gold-shop.price
+    hero.items.push(shop.item)
+  }
+  return hero
 }
 
 //Test cases
